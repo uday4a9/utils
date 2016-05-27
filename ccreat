@@ -1,0 +1,23 @@
+#! /usr/bin/env /usr/bin/python
+
+import os, sys
+
+
+def main():
+    if not os.path.isfile(sys.argv[1]):
+        os.system('touch %s'%(sys.argv[1]))
+	fil = open(sys.argv[1], 'w')
+	fil.write('#include <stdio.h>\n')
+	fil.write('#include <stdlib.h>\n')
+	fil.write('#include <string.h>\n\n')
+	fil.write('int main()\n{\n\n}')
+	fil.close()
+    print "File Created Succesfully...."
+
+
+
+if __name__ == '__main__':
+    if len(sys.argv) != 2:
+        print "Pass only one file name as an argument"
+        sys.exit(1)
+    main()
