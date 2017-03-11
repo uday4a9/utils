@@ -1,0 +1,31 @@
+sudo apt-get update
+sudo apt-get install vim gcc
+sudo nano /etc/apt/sources.list
+wget https://dl.google.com/linux/linux_signing_key.pub
+sudo apt-key add linux_signing_key.pub
+sudo apt update
+sudo apt install google-chrome-stable
+ipython3
+sudo apt install python3-pip
+pip3 install ipython
+pip3 install --upgrade pip
+ipython
+sudo apt-get --purge remove ipython
+sudo apt install git
+git init
+git config
+git config --global
+git config --list
+git config --global user.name "Uday Kiran V"
+git config --global user.email "uday4a9@gmail.com"
+git config --list
+git config --global core.editor vim
+vim ~/.gitconfig 
+git clone https://github.com/uday4a9/awk.git
+git clone https://github.com/uday4a9/c.git
+git clone https://github.com/uday4a9/cpp.git
+git clone https://github.com/uday4a9/lsp.git
+git clone https://github.com/uday4a9/interview-programs.git
+git clone https://github.com/uday4a9/play.git
+git clone https://github.com/uday4a9/python.git
+git clone https://github.com/uday4a9/utils.git
